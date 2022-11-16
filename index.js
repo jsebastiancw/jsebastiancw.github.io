@@ -91,10 +91,7 @@ app.post('/users/login',redirectIfAuth, userLoginController);
 
 app.use((req,res)=>{res.render('notfound')});
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-port = 4000;
-}
+let port = 56350;
 app.listen(port, ()=>{
 console.log('App listening...')
 })
